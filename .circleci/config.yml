@@ -1,0 +1,8 @@
+jobs:
+  build:
+    resource_class: gpu.nvidia.small
+    machine:
+      image: cimg/aws:2023.05
+    resource_class: gpu.nvidia.small
+    steps:
+      - run: nvidia-smi
